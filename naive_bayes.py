@@ -97,5 +97,5 @@ if __name__ == "__main__":
     
     stats, prior_probs = train(training_data)
     num_misclassified = test(stats, prior_probs, test_data)
-    accuracy = 1 - num_misclassified/len(test_data)
+    accuracy = (1 - num_misclassified/len(test_data)) * 100
     print(accuracy)
