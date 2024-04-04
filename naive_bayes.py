@@ -58,7 +58,9 @@ def train(data):
         stats["M"][attr] = [mean(attributes_given_m[attr]), variance(attributes_given_m[attr])]
         stats["B"][attr] = [mean(attributes_given_b[attr]), variance(attributes_given_b[attr])]
 
-    return stats, prior_probs
+    # get the number of misclassifications from the training data using trained classifier
+    train_misclassified = test(stats, prior_probs, training_data)
+    return stats, prior_probs, train_misclassified
 
 
 def classify(input, stats, prior_probs):
@@ -95,7 +97,9 @@ if __name__ == "__main__":
     training_data = [data[i].split(",") for i in range(training_size)]
     test_data = [data[i].split(",") for i in range(training_size, len(data))]
     
-    stats, prior_probs = train(training_data)
-    num_misclassified = test(stats, prior_probs, test_data)
-    accuracy = (1 - num_misclassified/len(test_data)) * 100
-    print(accuracy)
+    stats, prior_probs, train_misclassified = train(training_data)
+    test_misclassified = test(stats, prior_probs, test_data)
+    train_accuracy = (1 - train_misclassified/training_size) * 100
+    test_accuracy = (1 - test_misclassified/len(test_data)) * 100
+    print(f"Training accuracy: {train_accuracy:.3f}%")
+    print(f"Test accuracy: {test_accuracy:.3f}%")
