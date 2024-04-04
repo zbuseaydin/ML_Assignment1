@@ -21,8 +21,8 @@ def variance(samples):
 # diagnosis M and diagnosis B
 def prior_probabilities(data_dict):
     num_m = len(data_dict["M"][0])
-    num_b = len(data_dict["B"][0])
-    return {"M": num_m / (num_m+num_b), "B": num_b / (num_m+num_b)}
+    prior_m = num_m / (len(data_dict["B"][0]) + num_m)
+    return {"M": prior_m, "B": 1-prior_m}
 
 
 # calculate the normal probability density function
