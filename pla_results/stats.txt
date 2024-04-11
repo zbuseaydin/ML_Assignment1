@@ -1,0 +1,81 @@
+Small data set:
+Initial weights for small dataset: [0.00 0.00 0.00]
+Convergence iteration: 30
+Accuracy: 1.00
+Weights: [-2.00 2.59 1.53]
+Decision boundary: y = -1.70x + 1.31
+--------------------
+Seed: 1
+Initial weights for small dataset: [4.17 7.20 0.00]
+Convergence iteration: 44
+Accuracy: 1.00
+Weights: [-3.83 5.26 2.88]
+Decision boundary: y = -1.83x + 1.33
+--------------------
+Seed: 2
+Initial weights for small dataset: [4.36 0.26 5.50]
+Convergence iteration: 33
+Accuracy: 1.00
+Weights: [-2.64 3.66 2.08]
+Decision boundary: y = -1.77x + 1.27
+--------------------
+Seed: 3
+Initial weights for small dataset: [5.51 7.08 2.91]
+Convergence iteration: 60
+Accuracy: 1.00
+Weights: [-4.49 6.82 3.18]
+Decision boundary: y = -2.15x + 1.41
+--------------------
+Seed: 4
+Initial weights for small dataset: [9.67 5.47 9.73]
+Convergence iteration: 13
+Accuracy: 1.00
+Weights: [-3.33 2.97 3.57]
+Decision boundary: y = -0.83x + 0.93
+--------------------
+Seed: 5
+Initial weights for small dataset: [2.22 8.71 2.07]
+Convergence iteration: 39
+Accuracy: 1.00
+Weights: [-4.78 7.38 3.22]
+Decision boundary: y = -2.30x + 1.49
+--------------------
+Seed: 6
+Initial weights for small dataset: [8.93 3.32 8.21]
+Convergence iteration: 28
+Accuracy: 1.00
+Weights: [-3.07 3.14 2.90]
+Decision boundary: y = -1.08x + 1.06
+--------------------
+Seed: 7
+Initial weights for small dataset: [0.76 7.80 4.38]
+Convergence iteration: 15
+Accuracy: 1.00
+Weights: [-4.24 6.22 3.34]
+Decision boundary: y = -1.86x + 1.27
+--------------------
+Seed: 8
+Initial weights for small dataset: [8.73 9.69 8.69]
+Convergence iteration: 13
+Accuracy: 1.00
+Weights: [-4.27 7.12 3.19]
+Decision boundary: y = -2.23x + 1.34
+--------------------
+Seed: 9
+Initial weights for small dataset: [0.10 5.02 4.96]
+Convergence iteration: 10
+Accuracy: 1.00
+Weights: [-3.90 4.43 3.57]
+Decision boundary: y = -1.24x + 1.09
+--------------------
+Seed: 10
+Initial weights for small dataset: [7.71 0.21 6.34]
+Convergence iteration: 32
+Accuracy: 1.00
+Weights: [-2.29 2.35 2.21]
+Decision boundary: y = -1.06x + 1.04
+--------------------
+Average number of iterations for convergence on the small dataset: 28.82
+Average number of iterations for convergence on the large dataset: 1824.91
+Average accuracy on the small dataset: 1.0
+Average accuracy on the large dataset: 0.9963636363636362
