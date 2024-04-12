@@ -147,7 +147,6 @@ def logistic_regression(X, y, step_size=0.05, epochs=1500, stochastic=False, reg
     X = np.c_[np.ones(X.shape[0]), X] # add bias term to X
     y = y.values
     y = np.where(y == target, 1, -1)
-    print(y)
     losses = []
     epsilon = 1e-5
     prev_E = np.inf
