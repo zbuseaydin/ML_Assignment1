@@ -4,6 +4,7 @@
 - numpy
 - matplotlib.pyplot
 ### Data
+Data is under the "pla_data" directory which is in the same directory as the script.
 ### Running the Code
 ### Output
 
@@ -16,6 +17,7 @@
 - argparse
 - math
 ### Data
+Data is under the "logistic_regression_data" directory which is in the same directory as the script.
 ### Running the Code
 ### Output
 
