@@ -6,6 +6,7 @@
 ### Data
 Data is under the "pla_data" directory which is in the same directory as the script.
 ### Running the Code
+The script can be run with the following command: python3 pla.py
 ### Output
 
 ## Part 2: Logistic Regression
