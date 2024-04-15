@@ -26,6 +26,7 @@ The script implements logistic regression with variations. The code produces out
 - Investigate Step Size (Deliverable 5): ```python3 logistic_regression.py -d 5```
 - Train Logistic Regression with Breast Cancer Data: ```python3 logistic_regression.py -d 0```
 ### Output
+Outputs are saved under the "logistic_regression_results" directory.
 - Finding Best Lambda (Deliverable 2): Creates lambda.xlsx that includes the accuracies for different lambda values by using 5-fold cross validation.
 - Comparing CD and SGD (Deliverable 3-4): Creates SGD-GD.xlsx and SGD-GD.png files. Excel file includes accuracies of configurations of logsitic regression. Image is the plot of the loss vs epoch in training.
 - Investigating step size (Deliverable 5): Creates step_size.xlsx that includes the information of searchin the best step size by using 5-fold cross validation again. Table also includes the convergence epoch for each step size. step_size_convergence.png file that plots loss of SGD with different initial step size.
