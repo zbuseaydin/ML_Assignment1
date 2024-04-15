@@ -99,7 +99,7 @@ if __name__ == "__main__":
     
     stats, prior_probs, train_misclassified = train(training_data)
     test_misclassified = test(stats, prior_probs, test_data)
-    train_accuracy = (1 - train_misclassified/training_size) * 100
-    test_accuracy = (1 - test_misclassified/len(test_data)) * 100
-    print(f"Training accuracy: {train_accuracy:.3f}%")
-    print(f"Test accuracy: {test_accuracy:.3f}%")
+    train_accuracy = (1 - train_misclassified/training_size)
+    test_accuracy = (1 - test_misclassified/len(test_data))
+    print(f"Train accuracy: {train_accuracy:.4f}")
+    print(f"Test accuracy: {test_accuracy:.4f}")
