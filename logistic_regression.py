@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import time
 import argparse
-import math
 
 
 
@@ -93,7 +92,7 @@ def cross_validation_score(X, y, lambdas, n_folds=5):
         for j, acc in enumerate(accuracy):
             lambda_df.loc[i,  str(j + 1)] = acc
 
-    lambda_df.to_excel('logistic_regression_results/lambda.csv', index=False)
+    lambda_df.to_excel('logistic_regression_results/lambda.xlsx', index=False)
     return [round(np.mean(x),4) for x in accuracies]
 
 
@@ -134,7 +133,7 @@ def cross_validation_score_step_size(X, y, step_sizes, n_folds=5):
         for j, acc in enumerate(accuracy):
             step_size_df.loc[i, 'Fold ' + str(j + 1) + 'average'] = acc
             step_size_df.loc[i, 'Convergence Epoch ' + str(j + 1)] = convergence_epochs[i][j]
-    step_size_df.to_excel('logistic_regression_results/step_size.csv', index=False)
+    step_size_df.to_excel('logistic_regression_results/step_size.xlsx', index=False)
     return accuracies, convergence_epochs
 
     
@@ -304,12 +303,11 @@ if __name__ == "__main__":
     X = pd.read_csv('logistic_regression_data/rice_cammeo_and_osmancik.csv', index_col=0)
     y = pd.read_csv('logistic_regression_data/rice_cammeo_and_osmancik_targets.csv', index_col=0)
     args = argparse.ArgumentParser()
-    args.add_argument("--deliverable", type=int, default=1)
+    args.add_argument("--deliverable", "-d", type=int, default=1)
     args = args.parse_args()
-    
-    if args.deliverable == 1:
-        X, y = preprocess(X, y)
-    elif args.deliverable == 2:
+     
+
+    if args.deliverable == 2:
         determine_best_lambda(X, y)
     elif args.deliverable == 3 or args.deliverable == 4:
         compare_GD_SGD(X, y)
